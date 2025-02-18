@@ -71,7 +71,7 @@ export default function Header() {
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a className="btn-getstarted" href="#about">Saber Mais</a>
+        {/* <a className="btn-getstarted" href="#about">Saber Mais</a> */}
 
       </div>
     </header>

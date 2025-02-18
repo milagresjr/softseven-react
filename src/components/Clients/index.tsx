@@ -32,13 +32,12 @@ export default function Clients() {
           }}
         >
           <SwiperSlide><img src="/assets/img/clients/client-1.png" className="img-fluid w-[200px]" alt="Cliente 1" width={200} height={200} /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-2.png" className="img-fluid w-[200px]" alt="Cliente 2" width={200} height={200} /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-3.png" className="img-fluid w-[200px]" alt="Cliente 3" width={200} height={200} /></SwiperSlide>
+          <SwiperSlide><img src="/assets/img/clients/client-22.jpg" className="img-fluid w-[200px]" alt="Cliente 2" width={200} height={200} /></SwiperSlide>
+          <SwiperSlide><img src="/assets/img/clients/client-33.png" className="img-fluid w-[200px]" alt="Cliente 3" width={200} height={200} /></SwiperSlide>
           <SwiperSlide><img src="/assets/img/clients/client-4.png" className="img-fluid w-[200px]" alt="Cliente 4" width={200} height={200} /></SwiperSlide>
           <SwiperSlide><img src="/assets/img/clients/client-5.png" className="img-fluid w-[200px]" alt="Cliente 5" width={200} height={200} /></SwiperSlide>
           <SwiperSlide><img src="/assets/img/clients/client-6.png" className="img-fluid w-[200px]" alt="Cliente 6" width={200} height={200} /></SwiperSlide>
           <SwiperSlide><img src="/assets/img/clients/client-7.png" className="img-fluid w-[200px]" alt="Cliente 7" width={200} height={200} /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-8.png" className="img-fluid w-[200px]" alt="Cliente 8" width={200} height={200} /></SwiperSlide>
         </Swiper>
       </div>
 
