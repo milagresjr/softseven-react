@@ -4,7 +4,7 @@ export default function CallToAction() {
        
         <section id="call-to-action" className="call-to-action section dark-background">
     
-          <img src="/assets/img/cta-bg.jpg" alt="" width={200} height={200} />
+          <img src="/assets/img/luanda.jpg" alt="" width={200} height={200} />
     
           <div className="container">
     

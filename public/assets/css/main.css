@@ -847,6 +847,8 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+  /* background-image: url(assets/img/hero-bg.jpg); */
+  /* background-color: red; */
   width: 100%;
   min-height: 80vh;
   position: relative;
