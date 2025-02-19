@@ -14,10 +14,12 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "glightbox": "^3.3.1",
+    "isotope-layout": "^3.0.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "swiper": "^11.2.4",
-    "tailwindcss": "^4.0.6"
+    "tailwindcss": "^4.0.6",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

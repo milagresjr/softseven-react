@@ -17,7 +17,7 @@ export default function Banner() {
                         </div>
                     </div>
                     <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                        <img src="/assets/img/girl.png" className="img-fluid animated" alt="" width={700} height={400} />
+                        <img src="/assets/img/hero-img.png" className="img-fluid animated" alt="" width={700} height={400} />
                     </div>
                 </div>
             </div>

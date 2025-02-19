@@ -16,7 +16,7 @@ export default function About() {
                 <div className="row gy-4">
 
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                       <img src="/assets/img/about-us.png" alt="Sobre-nos" width={400} height={400} />
+                       <img src="/assets/img/logo-colorido.png" alt="Sobre-nos" width={500} height={400} />
                     </div>
 
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">

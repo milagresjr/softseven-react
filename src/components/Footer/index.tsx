@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+
     return (
 
         <>
@@ -78,7 +80,7 @@ export default function Footer() {
 
                 <div className="container copyright text-center mt-4">
                     <p>© <span>Copyright</span> <strong className="px-1 sitename">Softseven</strong> <span>Todos Direito Reservado</span></p>
-                  </div>
+                </div>
             </footer>
 
             {/* <!-- Scroll Top --> */}

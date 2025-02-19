@@ -6,7 +6,8 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 // import GLightbox from 'glightbox';
 // import Swiper from 'swiper/bundle';
-import './assets/css/main.css'
+import './../public/assets/css/main.css'
+// import './../public/assets/js/main.js'
 import App from './App.tsx'
 
 // Inicialize as bibliotecas
