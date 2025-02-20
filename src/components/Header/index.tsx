@@ -33,10 +33,9 @@ export default function Header() {
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
 
         <a href="index.html" className="d-flex align-items-center me-auto">
-
           <img
             src="/assets/img/logo2.png"
-            width={200}
+            width={180}
             alt="Logo"
           />
           <h1 className="hidden sitename">SoftSeven</h1>
