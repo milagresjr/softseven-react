@@ -39,6 +39,7 @@ export default function Clients() {
             "client-n6.jpg",
             "client-n7.jpg",
             "client-n1.jpg",
+            "client-44.jpg",
           ].map((src, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center">
