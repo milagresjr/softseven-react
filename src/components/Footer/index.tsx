@@ -67,10 +67,10 @@ export default function Footer() {
                             <h4>siga-nos</h4>
                             <p>Siga-nos nas rede-socias.</p>
                             <div className="social-links d-flex">
-                                <a href=""><i className="bi bi-twitter-x"></i></a>
-                                <a href=""><i className="bi bi-facebook"></i></a>
-                                <a href=""><i className="bi bi-instagram"></i></a>
-                                <a href=""><i className="bi bi-linkedin"></i></a>
+                                <a target="_blank" href="https://x.com/SoftSevenps"><i className="bi bi-twitter-x"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100063972525532"><i className="bi bi-facebook"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/softseven__oficial/"><i className="bi bi-instagram"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/company/softseven-oficial/?viewAsMember=true&success=true"><i className="bi bi-linkedin"></i></a>
                             </div>
                         </div>
 

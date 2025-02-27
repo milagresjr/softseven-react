@@ -1,6 +1,45 @@
-// 'use client';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod'
+import { ContactType } from '../../types';
+import { sendMail } from '../../service/contact';
+import Swal from 'sweetalert2';
+import { useState } from 'react';
+
 
 export default function Contacts() {
+
+    const [loading,setLoading] = useState(false);
+
+    const schema = z.object({
+        name: z.string().min(1, "Nome é obrigatório"),
+        email: z.string().email("Email inválido"),
+        subject: z.string().min(1, "Assunto é obrigatório"),
+        message: z.string().min(1, "Mensagem é obrigatória"),
+    });
+
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
+        resolver: zodResolver(schema)
+    });
+
+    const onSubmit = async (data: ContactType) => {
+        setLoading(true);
+        try {
+            await sendMail(data);
+            Swal.fire({
+                title: "",
+                text: "Mensagem enviada com sucesso!",
+                icon: "success"
+              });
+              reset();
+        } catch (error) {
+            console.log("Erro ao enviar o email",error);
+        } finally {
+            setLoading(false);
+            reset();
+        }
+    };
+
     return (
 
         <section id="contact" className="contact section light-background">
@@ -53,27 +92,31 @@ export default function Contacts() {
                     </div>
 
                     <div className="col-lg-7">
-                        <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                        <form onSubmit={handleSubmit(onSubmit)} className="php-email-form" data-aos="fade-up" data-aos-delay="200">
                             <div className="row gy-4">
 
                                 <div className="col-md-6">
                                     <label htmlFor="name-field" className="pb-2">Seu Nome</label>
-                                    <input type="text" name="name" id="name-field" className="form-control" required />
+                                    <input type="text" id="name-field" className="form-control" {...register("name")} />
+                                    {errors.name && <p className="error-message">{errors.name.message}</p>}
                                 </div>
 
                                 <div className="col-md-6">
                                     <label htmlFor="email-field" className="pb-2">Seu Email</label>
-                                    <input type="email" className="form-control" name="email" id="email-field" required />
+                                    <input type="email" className="form-control" id="email-field" {...register("email")} />
+                                    {errors.email && <p className="error-message">{errors.email.message}</p>}
                                 </div>
 
                                 <div className="col-md-12">
                                     <label htmlFor="subject-field" className="pb-2">Assunto</label>
-                                    <input type="text" className="form-control" name="subject" id="subject-field" required />
+                                    <input type="text" className="form-control" id="subject-field" {...register("subject")} />
+                                    {errors.subject && <p className="error-message">{errors.subject.message}</p>}
                                 </div>
 
                                 <div className="col-md-12">
                                     <label htmlFor="message-field" className="pb-2">Mensagem</label>
-                                    <textarea className="form-control" name="message" rows={10} id="message-field" required></textarea>
+                                    <textarea className="form-control" rows={10} id="message-field" {...register("message")}></textarea>
+                                    {errors.message && <p className="error-message">{errors.message.message}</p>}
                                 </div>
 
                                 <div className="col-md-12 text-center">
@@ -81,7 +124,7 @@ export default function Contacts() {
                                     <div className="error-message"></div>
                                     <div className="sent-message">Your message has been sent. Thank you!</div>
 
-                                    <button type="submit">Enviar Mensagem</button>
+                                    <button type="submit">{`${loading ? 'Carregando...' : 'Enviar Mensagem'}`}</button>
                                 </div>
 
                             </div>
