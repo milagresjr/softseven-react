@@ -31,9 +31,10 @@ const ParticlesComponent = ({ id }: ParticlesComponentProps) => {
         enable: false, // <== ESSENCIAL!
         },
       background: {
-        color: {
-          value: "#1E2F97",
-        },
+        image: "url('/assets/img/fundo3.jpg')",
+        position: "center center",
+        repeat: "no-repeat",
+        size: "cover",
       },
       fpsLimit: 120,
       interactivity: {
