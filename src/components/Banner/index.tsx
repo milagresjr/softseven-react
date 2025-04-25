@@ -8,7 +8,7 @@ export default function Banner() {
                 <div className="row gy-4">
                     <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
                         <h1>Melhores soluções para o seu negócio</h1>
-                        <p>We are team of talented designers making websites with Bootstrap</p>
+                        <p>Somos uma equipe criativa e experiente, desenvolvendo soluções digitais modernas e sob medida para sua empresa.</p>
                         <div className="d-flex">
                             <a href="#about" className="btn-get-started">Começa Aqui</a>
                             {/* <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" className="hidden glightbox btn-watch-video d-flex align-items-center">
