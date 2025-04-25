@@ -6,7 +6,6 @@ import Clients from "./components/Clients"
 import Contacts from "./components/Contacts"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-import ParticlesComponent from "./components/ParticlesBackground"
 import Service from "./components/Service"
 import useTemplate from "./hooks/useTemplate"
 import './main.css'
