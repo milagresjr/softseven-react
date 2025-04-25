@@ -83,7 +83,7 @@ export default function Contacts() {
                                 </div>
                             </div>
                             <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31530.550191779414!2d13.222877278315691!3d-8.94274456973201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f5fe863e573d%3A0x659076c860d93bd5!2zU2hvcHBpbmcgUG9wdWxhciDmtbflsbHllYbotLjln44!5e0!3m2!1spt-PT!2sao!4v1739631775321!5m2!1spt-PT!2sao" 
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3941.3085568998777!2d13.236227575017839!3d-8.94368839111426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTYnMzcuMyJTIDEzwrAxNCcxOS43IkU!5e0!3m2!1spt-PT!2sao!4v1745602978522!5m2!1spt-PT!2sao" 
                             style={{ border: 'none', width: '100%', height: '270px' }} 
                             allowFullScreen
                             loading="lazy" 

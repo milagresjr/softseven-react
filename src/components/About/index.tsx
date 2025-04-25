@@ -4,8 +4,7 @@ export default function About() {
 
     return (
 
-        <section id="about" className="about section">
-
+        <section id="about" className="about section" style={{ zIndex: 99999 }}>
 
             <div className="container section-title" data-aos="fade-up">
                 <h2>Quem Somos</h2>

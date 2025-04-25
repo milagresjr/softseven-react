@@ -5,7 +5,7 @@ export default function Service() {
 
     return (
 
-        <section id="services" className="services section light-background">
+        <section id="services" className="services section light-background" style={{ zIndex: 99999 }}>
 
 
             <div className="container section-title" data-aos="fade-up">

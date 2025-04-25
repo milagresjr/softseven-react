@@ -1,0 +1,11 @@
+/* style.css */
+#tsparticles {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    /* z-index: 1; */
+    pointer-events: none; /* <-- isso evita que o fundo atrapalhe cliques */
+  }
+  

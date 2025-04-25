@@ -1,9 +1,23 @@
-.hero {
+/* .hero {
   background: linear-gradient(rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.1)), 
   url('/assets/img/softseven bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Ativa o efeito parallax */
+  background-attachment: fixed;
  
+} */
+
+.hero {
+  /* Remove a imagem de fundo */
+  background: transparent;
+
+  /* Mantém o restante do estilo, se quiser */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
+
