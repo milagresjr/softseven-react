@@ -45,7 +45,7 @@ export default function Header() {
     >
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
 
-        <a href="index.html" className="d-flex align-items-center me-auto">
+        <a href="#hero" className="d-flex align-items-center me-auto">
           <img
             src="/assets/img/logo2.png"
             width={180}
