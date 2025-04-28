@@ -21,6 +21,19 @@ export default function Header() {
     };
   }, []);
 
+  const handleMenuItemClick = () => {
+    const body = document.querySelector('body');
+    const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  
+    if (body?.classList.contains('mobile-nav-active')) {
+      body.classList.remove('mobile-nav-active');
+      mobileNavToggleBtn?.classList.add('bi-list');
+      mobileNavToggleBtn?.classList.remove('bi-x');
+    }
+  };
+  
+
+
   return (
     <header
       id="header"
@@ -43,10 +56,10 @@ export default function Header() {
 
         <nav id="navmenu" className="navmenu">
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">quem somos</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#clients">Clientes</a></li>
+            <li><a href="#hero" onClick={handleMenuItemClick}>Home</a></li>
+            <li><a href="#about" onClick={handleMenuItemClick}>quem somos</a></li>
+            <li><a href="#services" onClick={handleMenuItemClick}>Serviços</a></li>
+            <li><a href="#clients" onClick={handleMenuItemClick}>Clientes</a></li>
             <li className="hidden dropdown"><a href="#"><span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
@@ -64,7 +77,7 @@ export default function Header() {
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#contact" onClick={handleMenuItemClick}>Contacto</a></li>
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
