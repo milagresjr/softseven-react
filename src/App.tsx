@@ -7,6 +7,7 @@ import Contacts from "./components/Contacts"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Service from "./components/Service"
+import WhatsappButton from "./components/WhatsappButton"
 import useTemplate from "./hooks/useTemplate"
 import './main.css'
 
@@ -35,6 +36,7 @@ function App() {
       <Clients />
       <Contacts />
       <Footer />
+      <WhatsappButton />
     </>
   )
 }
